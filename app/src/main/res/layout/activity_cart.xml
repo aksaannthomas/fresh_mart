@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic2"
+    tools:context=".Cart">
+
+  <RelativeLayout
+      android:id="@+id/rl1"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/orange"
+      android:layout_alignParentTop="true">
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CART"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+
+  </RelativeLayout>
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/cart_list"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/rl1"
+      android:padding="10dp"
+      tools:listitem="@layout/layout_order"
+      android:layout_above="@+id/btnPayment">
+
+  </androidx.recyclerview.widget.RecyclerView>
+
+  <Button
+      android:id="@+id/btnPayment"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/button_design"
+      android:textSize="20dp"
+      android:text="Go to Payment"
+      android:layout_margin="25dp"/>
+</RelativeLayout>
+
+

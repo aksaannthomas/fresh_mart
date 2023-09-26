@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.freshmart">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".BaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FreshMart">
+        <activity android:name=".AdminAddNewProductActivity"></activity>
+        <activity android:name=".Fenugreek" />
+        <activity android:name=".Pepper" />
+        <activity android:name=".Spices" />
+        <activity android:name=".Wheatcorn" />
+        <activity android:name=".Ragi" />
+        <activity android:name=".Quinoa" />
+        <activity android:name=".Foodgrains" />
+        <activity android:name=".Cabbage" />
+        <activity android:name=".Mango" />
+        <activity android:name=".FruitsVegetables" />
+        <activity android:name=".ProfileUpdate" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".Turmeric" />
+        <activity android:name=".Cardamom" />
+        <activity android:name=".Cinnamon" />
+        <activity android:name=".Clove" />
+        <activity android:name=".BasmatiRice" />
+        <activity android:name=".Oats" />
+        <activity android:name=".Atta" />
+        <activity android:name=".Whiterice" />
+        <activity android:name=".Cart" />
+        <activity android:name=".Pineapple" />
+        <activity android:name=".Ladyfinger" />
+        <activity android:name=".BaseApp$Brinjal" />
+        <activity android:name=".Orders" />
+        <activity android:name=".Apple" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".Profile" />
+        <activity android:name=".toolbar" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".CreateAccount" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic2"
+    tools:context=".HomePage">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="430dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@id/toolbar"
+                app:srcCompat="@drawable/grocerystore" />
+
+            <TextView
+                android:id="@+id/tv_fruits"
+                android:layout_width="263dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:paddingLeft="13dp"
+                android:text="@string/fruits_vegetables"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalSv1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSv1"
+                android:layout_width="406dp"
+                android:layout_height="189dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/iv_apple"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/apple" />
+
+                    <ImageButton
+                        android:id="@+id/iv_brinjal"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/brinjal"
+                        tools:layout_editor_absoluteX="158dp"
+                        tools:layout_editor_absoluteY="628dp" />
+
+                    <ImageButton
+                        android:id="@+id/iv_pineapple"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pineapple" />
+
+                    <ImageButton
+                        android:id="@+id/iv_ladyfinger"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ladys_finger" />
+
+                    <ImageButton
+                        android:id="@+id/iv_arrow1"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/arrow" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/tv_staples"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:paddingLeft="13dp"
+                android:text="Foodgrains"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalSv2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalSv1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSv2"
+                android:layout_width="406dp"
+                android:layout_height="189dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalSv1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/iv_whiterice"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/white_rice" />
+
+                    <ImageButton
+                        android:id="@+id/iv_oats"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/oats"
+                        tools:layout_editor_absoluteX="158dp"
+                        tools:layout_editor_absoluteY="628dp" />
+
+                    <ImageButton
+                        android:id="@+id/iv_ragi"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ragi" />
+
+                    <ImageButton
+                        android:id="@+id/iv_basmati"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/basmati_rice" />
+
+                    <ImageButton
+                        android:id="@+id/iv_arrow2"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/arrow" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv_spices"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:paddingLeft="13dp"
+                android:text="Spices"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalSv2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalSv1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSv3"
+                android:layout_width="406dp"
+                android:layout_height="189dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalSv1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/iv_clove"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cloves" />
+
+                    <ImageButton
+                        android:id="@+id/iv_cardamom"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cardamom"
+                        tools:layout_editor_absoluteX="158dp"
+                        tools:layout_editor_absoluteY="628dp" />
+
+                    <ImageButton
+                        android:id="@+id/iv_cinnamon"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cinamon" />
+
+                    <ImageButton
+                        android:id="@+id/iv_turmeric"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/turmeric" />
+
+                    <ImageButton
+                        android:id="@+id/iv_arrow3"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/arrow" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
